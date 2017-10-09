@@ -16,7 +16,7 @@ app.config_from_object('django.conf:settings', namespace='CELERY')
 #load task modules from all registered Django app configs.
 app.autodiscover_tasks(lambda : settings.INSTALLED_APPS)
 
-app.conf.update(BROKER_URL=os.environ['REDIS_URL'])
+# app.conf.update(BROKER_URL=os.environ['REDIS_URL'])
 
 app.conf.beat_schedule ={
     'get_ocn_schedule': {
