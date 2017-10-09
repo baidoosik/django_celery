@@ -1,0 +1,16 @@
+amqp
+bs4
+billiard
+celery==4.1.0
+dj-database-url
+Django==1.11
+gunicorn
+kombu
+newrelic
+psycopg2
+pytz
+redis
+requests
+selenium
+vine
+whitenoise
